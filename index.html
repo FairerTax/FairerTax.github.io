@@ -56,7 +56,7 @@
     </div>
 
     <div id="main">
-      <section id="Summary" class="one">
+      <section id="Summary" class="three">
         <div class="container">
           <header>
             <h2 class="alt">Fairer Tax Proposal</h2>
@@ -76,10 +76,6 @@
             <p></p>
             <body class="flex items-center justify-center min-h-screen p-4">
               <div class="bg-white p-8 rounded-xl shadow-lg w-full max-w-md">
-                <h1 class="text-3xl font-bold text-center text-gray-800 mb-6">
-                  Wealth Tax Calculator
-                </h1>
-
                 <div class="mb-4">
                   <label
                     for="netWorthInput"
@@ -90,32 +86,22 @@
                   <input
                     type="number"
                     id="netWorthInput"
-                    class="shadow-sm appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200"
                     placeholder="e.g., 150000000"
                     value="0"
                     min="0"
                   />
+                  <button id="calculateBtn">Calculate Wealth Tax</button>
                 </div>
-
-                <button
-                  id="calculateBtn"
-                  class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75 transition duration-200 shadow-md hover:shadow-lg transform hover:scale-105"
-                >
-                  Calculate Wealth Tax
-                </button>
-
-                <div
-                  class="mt-6 p-4 bg-blue-50 rounded-lg border border-blue-200"
-                >
-                  <p class="text-gray-700 text-sm font-semibold mb-2">
-                    Calculated Annual Wealth Tax:
-                  </p>
-                  <p
+                <div class="mt-6 p-4 rounded-lg border border-blue-200">
+                  <span class="text-gray-700 text-sm font-semibold mb-2">
+                    Calculated New Annual Wealth Tax:
+                  </span>
+                  <span
                     id="displayWealthTax"
                     class="text-2xl font-extrabold text-blue-800"
                   >
                     $0.00
-                  </p>
+                  </span>
                 </div>
               </div>
             </body>
@@ -169,21 +155,31 @@
           </header>
 
           <p>
-            Currently, the working class suffers heavily from the rapidly
-            widening wealth inequality. The adverse effects of having such
-            drastic inequality includes inflation without wage growth, reduced
-            availability of housing units, increasing rent and house prices,
-            increasingly unaffordable healthcare and immense wealth influence
-            over the government. The bottom 90% only holds 32.8% of the nation’s
-            wealth while the top 10% holds roughly 67.2% of total net wealth
-            ($107.5 trillion), and even further, the top 1% holds 30.8% of the
-            wealth ($49.2 trillion), indicating significant concentration at the
-            top.
+            <span style="font-weight: 400">Currently, the </span
+            ><strong
+              >working class suffers heavily from the rapidly widening</strong
+            >
+            <strong>wealth inequality</strong
+            ><span style="font-weight: 400"
+              >. The adverse effects of having such drastic inequality includes </span
+            ><strong
+              >inflation without wage growth, reduced availability of housing
+              units, increasing rent and house prices, increasingly unaffordable
+              healthcare and immense wealth influence over the
+              government</strong
+            ><span style="font-weight: 400">. The </span
+            ><strong
+              >bottom 90% only holds 32.8% of the nation&rsquo;s wealth while
+              the top 10% holds roughly 67.2% of total net wealth ($107.5
+              trillion)</strong
+            ><span style="font-weight: 400">, and even further, the </span
+            ><strong
+              >top 1% holds 30.8% of the wealth ($49.2 trillion), indicating
+              significant concentration at the top.</strong
+            >
           </p>
-          <img
-            src="images/wealthDistPie.png"
-            class="image fit"
-          />
+          <img src="images/wealthDistPie.png" class="image fit" />
+          <p></p>
           <p>
             <span style="font-weight: 400"
               >The contributing factors to this inequality can be listed as
@@ -275,7 +271,7 @@
         </div>
       </section>
 
-      <section id="Proposal" class="three">
+      <section id="Proposal" class="four">
         <div class="container">
           <header>
             <h2>Proposal</h2>
@@ -420,149 +416,154 @@
             <tbody>
               <tr>
                 <td>
-                  <p><span style="font-weight: 400">Net Worth</span></p>
+                  <p><strong>Individual</strong></p>
                 </td>
                 <td>
-                  <p>
-                    <span style="font-weight: 400"
-                      >Estimated Current Income Tax</span
-                    >
-                  </p>
+                  <p><strong>Net Worth</strong></p>
                 </td>
                 <td>
-                  <p>
-                    <span style="font-weight: 400">Progressive wealth tax</span>
-                  </p>
-                  <p>
-                    <span style="font-weight: 400"
-                      >(% change from current tax)</span
-                    >
-                  </p>
+                  <p><strong>Estimated Income Tax</strong></p>
+                </td>
+                <td>
+                  <p><strong>Wealth Tax (New)</strong></p>
+                </td>
+                <td>
+                  <p><strong>% Change</strong></p>
                 </td>
               </tr>
               <tr>
                 <td>
                   <p>
                     <span style="font-weight: 400"
-                      >$135,600 (35-44 yo median NW)</span
+                      >Median (35&ndash;44 yo)</span
                     >
                   </p>
+                </td>
+                <td>
+                  <p><span style="font-weight: 400">$135,600</span></p>
                 </td>
                 <td>
                   <p><span style="font-weight: 400">$13,973</span></p>
                 </td>
                 <td>
-                  <p><span style="font-weight: 400">$1,356 (10%)</span></p>
+                  <p><span style="font-weight: 400">$1,356</span></p>
+                </td>
+                <td>
+                  <p><span style="font-weight: 400">-90.3%</span></p>
                 </td>
               </tr>
               <tr>
                 <td>
                   <p>
-                    <span style="font-weight: 400"
-                      >$549,600 (35-44 yo mean NW)</span
-                    >
+                    <span style="font-weight: 400">Mean (35&ndash;44 yo)</span>
                   </p>
+                </td>
+                <td>
+                  <p><span style="font-weight: 400">$549,600</span></p>
                 </td>
                 <td>
                   <p><span style="font-weight: 400">$26,642</span></p>
                 </td>
                 <td>
-                  <p><span style="font-weight: 400">$5,496 (20%)</span></p>
+                  <p><span style="font-weight: 400">$5,496</span></p>
+                </td>
+                <td>
+                  <p><span style="font-weight: 400">-79.4%</span></p>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <p>
-                    <span style="font-weight: 400"
-                      >$14,000,000 (borderline 1%er)</span
-                    >
-                  </p>
+                  <p><span style="font-weight: 400">1% Threshold</span></p>
+                </td>
+                <td>
+                  <p><span style="font-weight: 400">$14,000,000</span></p>
                 </td>
                 <td>
                   <p><span style="font-weight: 400">$223,333</span></p>
                 </td>
                 <td>
-                  <p><span style="font-weight: 400">$310,000 (139%)</span></p>
+                  <p><span style="font-weight: 400">$310,000</span></p>
+                </td>
+                <td>
+                  <p><span style="font-weight: 400">+38.8%</span></p>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <p>
-                    <span style="font-weight: 400"
-                      >$1,100,000,000 (Google CEO)</span
-                    >
-                  </p>
+                  <p><span style="font-weight: 400">Google CEO</span></p>
+                </td>
+                <td>
+                  <p><span style="font-weight: 400">$1.1 billion</span></p>
                 </td>
                 <td>
                   <p><span style="font-weight: 400">$25,077,918</span></p>
                 </td>
                 <td>
-                  <p>
-                    <span style="font-weight: 400">$43,890,000 (175%)</span>
-                  </p>
+                  <p><span style="font-weight: 400">$43,890,000</span></p>
+                </td>
+                <td>
+                  <p><span style="font-weight: 400">+75%</span></p>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <p>
-                    <span style="font-weight: 400"
-                      >$145,400,000,000 (Nvidia CEO)</span
-                    >
-                  </p>
+                  <p><span style="font-weight: 400">Nvidia CEO</span></p>
+                </td>
+                <td>
+                  <p><span style="font-weight: 400">$145.4 billion</span></p>
                 </td>
                 <td>
                   <p><span style="font-weight: 400">$238,090,000</span></p>
                 </td>
                 <td>
-                  <p>
-                    <span style="font-weight: 400">$9,066,890,000 (3808%)</span>
-                  </p>
+                  <p><span style="font-weight: 400">$9,066,890,000</span></p>
+                </td>
+                <td>
+                  <p><span style="font-weight: 400">+3708%</span></p>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <p>
-                    <span style="font-weight: 400"
-                      >$414,600,000,000 (Tesla CEO)</span
-                    >
-                  </p>
+                  <p><span style="font-weight: 400">Tesla CEO</span></p>
+                </td>
+                <td>
+                  <p><span style="font-weight: 400">$414.6 billion</span></p>
                 </td>
                 <td>
                   <p><span style="font-weight: 400">$476,090,000</span></p>
                 </td>
                 <td>
-                  <p>
-                    <span style="font-weight: 400"
-                      >$27,910,890,000 (5863%)</span
-                    >
-                  </p>
+                  <p><span style="font-weight: 400">$27,910,890,000</span></p>
+                </td>
+                <td>
+                  <p><span style="font-weight: 400">+5763%</span></p>
                 </td>
               </tr>
             </tbody>
           </table>
-          <img src="images/workingClassNet.png" class="image fit"/>
+          <img src="images/workingClassNet.png" class="image fit" />
           <p>
             <span style="font-weight: 400"
               >In comparison to the net worth of the top 1%, the tax paid by the
               average/median citizens will be almost non-existent.</span
             >
           </p>
-          <img src="images/uberRichNet.png" class="image fit"/>
+          <img src="images/uberRichNet.png" class="image fit" />
           <p>
             <span style="font-weight: 400"
               >This remains true even for the uber rich, as only about 6% of
               their total net worth gets taxed.</span
             >
           </p>
-          <img src="images/workingClassTax.png" class="image fit"/>
+          <img src="images/workingClassTax.png" class="image fit" />
           <p>
             <span style="font-weight: 400"
               >For the median and average net worth individuals, there will be
-              significant reduction in tax. The 1% will see a 39% increase in
+              significant reduction in tax. The 1% will see a modest increase in
               tax.</span
             >
           </p>
-          <img src="images/uberRichTax.png" class="image fit"/>
+          <img src="images/uberRichTax.png" class="image fit" />
           <p>
             <span style="font-weight: 400"
               >The uber rich will be paying far more appropriate taxes compared
@@ -760,7 +761,7 @@
         </div>
       </section>
 
-      <section id="Results" class="two">
+      <section id="Results" class="three">
         <div class="container">
           <header>
             <h2>Result of proposal</h2>
@@ -945,8 +946,8 @@
                 ><strong>more market participation</strong
                 ><span style="font-weight: 400"> overall, creating a more </span
                 ><strong
-                  >diverse stock market where all the money are not just
-                  parked within the Mag 7/S&amp;P500 stocks</strong
+                  >diverse stock market where all the money are not just parked
+                  within the Mag 7/S&amp;P500 stocks</strong
                 >
               </li>
             </ul>

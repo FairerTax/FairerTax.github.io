@@ -2371,33 +2371,22 @@ button:active,
 }
 
 #main > section.one {
-  background-color: #6b9080;
+  background-color: #81918e;
   background-image: url("../../images/banner.jpg");
 }
 
 #main > section.two {
-  background-color: #f8fbf8;
+  background-color: #f5fafa;
 }
 
 #main > section.three {
-  background-color: #ebf0eb;
+  background-color: #ecf1f1;
 }
 
 #main > section.four {
-  background-color: #dae0da;
+  background-color: #e8edec;
 }
 
-#main > section.five {
-  background-color: #c6ccc6;
-}
-
-#main > section.six {
-  background-color: #b2b8b2;
-}
-
-#main > section.seven {
-  background-color: #a0a6a0;
-}
 /* Wide */
 
 @media screen and (min-width: 961px) and (max-width: 1880px) {
